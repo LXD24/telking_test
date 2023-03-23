@@ -1,0 +1,379 @@
+:root {
+    --black: #202124;
+    --grey: #CCCFD0;
+    --white:#FFF;
+    --main-background:#F5F8F9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.absolute-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    color: var(--grey);
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    font-weight: 500;
+    padding: 7px 15px;
+    font-size: 12px;
+    border: none;
+}
+
+
+.btn-large {
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.app {
+    min-width: 1500px;
+}
+
+.top {
+    width: 100%;
+    height: 100px;
+    background-color: var(--white);
+}
+
+.top .content {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.top .toolbar {
+    width: 200px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+.top .toolbar .btn {
+    background-color: red;
+    color: var(--white);
+}
+
+.top .toolbar .btn:hover {
+    background-color: #FF6262;
+}
+
+.main {
+    width: 100%;
+    background-color: var(--main-background);
+}
+
+.content {
+    margin: 0 150px;
+}
+
+.main .content {
+    padding-bottom: 80px;
+}
+
+.main .container {
+    background-color: var(--white);
+    margin-top: 20px;
+}
+
+.main-top {
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.main-top .main-top-left .title {
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.main-top .main-top-left .sub-title {
+    font-size: 16px;
+    color: var(--grey);
+}
+
+.main-top .main-top-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-top .main-top-nav ul {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.main-top .main-top-nav ul li {
+    position: relative
+}
+
+.main-top .main-top-nav ul li a {
+    color: var(--black);
+    font-weight: bold;
+    padding: 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.main-top .main-top-nav ul li.active:before {
+    width: 70%;
+    background-color: var(--grey);
+}
+
+.main-top .main-top-nav ul li:hover:before {
+    width: 70%;
+    background-color: var(--grey);
+}
+
+.main-top .main-top-nav ul li:before {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    top: unset;
+    left: 0;
+    right: 0;
+    width: 0;
+    margin: auto;
+    height: 3px;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: 500ms;
+}
+
+.main-sub-1 .container,
+.main-sub-3 .container {
+    flex: 1;
+    height: 400px;
+    /* min-width: 600px; */
+    margin-right: 20px;
+}
+
+.main-sub-2 .container {
+    flex: 1;
+    height: 400px;
+    /* min-width: 1280px; */
+    margin-right: 20px;
+}
+
+.main-sub-1 .container:last-child,
+.main-sub-2 .container:last-child,
+.main-sub-3 .container:last-child {
+    margin-right: 0;
+}
+
+.main .carousel {
+    margin: 20px;
+    flex: 1;
+    position: relative;
+}
+
+.main .carousel img {
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.main .carousel .previous,
+.main .carousel .next {
+    padding: 8px;
+    background-color: var(--black);
+    opacity: 0.6;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.main .carousel .previous {
+    left: 5px;
+}
+
+.main .carousel .next {
+    right: 5px;
+}
+
+.main .carousel ul {
+    bottom: 15px;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.main .carousel ul li {
+    width: 8px;
+    height: 12px;
+    margin: 0 10px;
+    background-color: var(--grey);
+    cursor: pointer;
+}
+
+.main .carousel ul li.active {
+    height: 14px;
+    background-color: var(--white);
+}
+
+.main-sub-1 .search-bar {
+    flex: 1;
+    height: 80px;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-sub-1 .search-bar span {
+    font-size: 24px;
+}
+
+.main-sub-1 .search-bar .btn {
+    background-color: var(--white);
+    border: 2px solid var(--grey);
+    cursor: pointer;
+    color: Black;
+}
+
+.main-sub-1 .search-bar .btn:hover {
+    background-color: var(--grey);
+}
+
+.main-sub-1 .divider {
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-background);
+}
+
+.main-sub-1 .table {
+    flex: 1;
+    font-size: 14px;
+    background-color: var(--white);
+    margin: 20px;
+}
+
+.main-sub-1 .table .table-header {
+    font-weight: bold;
+}
+
+.main-sub-1 .table .table-row {
+    height: 80px;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+.main-sub-1 .table .table-row div:first-child,
+.main-sub-1 .table .table-row div:last-child {
+    max-width: 200px;
+}
+
+.main-sub-1 .table .table-row div {
+    flex: 1;
+    align-items: center;
+    line-height: 25px;
+}
+
+.main-sub-1 .table .table-row div .btn {
+    background-color: #5DD054;
+    color: var(--white);
+    border: none;
+}
+
+.main-sub-1 .table .table-row div .btn:hover {
+    background-color: #71FF6A;
+}
+
+
+.bottom {
+    width: 100%;
+    height: 300px;
+    background-color: var(--black);
+}
+
+.bottom .content {
+    height: 300px;
+}
+
+.bottom .content div {
+    margin-top: 80px;
+    min-width: 200px;
+}
+
+.bottom .content ul li {
+    width: 15px;
+    height: 22px;
+    margin: 10px 0;
+}
+
+.bottom .content ul li a {
+    color: var(--white);
+    font-size: 12px;
+}
+
+.inner-container {
+    margin: 20px;
+    flex: 1;
+}
+
+.chart {
+    flex: 1;
+}

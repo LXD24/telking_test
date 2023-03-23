@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+</head>
+<link type="text/css" rel="stylesheet" href="./static/css/style.css">
+<body>
+    <div class="app">
+        <div class="top">
+            <div class="content flex-row">
+                <div class="logo"><img src="./static/images/logo.png" /></div>
+                <div class="toolbar flex-row">
+                    <a><img src="./static/images/icon1.png"></a>
+                    <a><img src="./static/images/icon2.png"></a>
+                    <button class="btn btn-large">Log Out</button>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="content">
+                <div class="main-top flex-row">
+                    <div class="main-top-left">
+                        <h5 class="title">Audience Overview</h5>
+                        <span class="sub-title">Rosevile,CA</span>
+                    </div>
+
+                    <div class="main-top-nav">
+                        <ul class="flex-row">
+                            <li class="active">
+                                <a href="javascript:void(0)">DASHBOARD</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">PROJECTS</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">CALENDAR</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">MAILBOX</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">SETTINGS</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <div class="main-sub-1 flex-row">
+                    <div class="container flex">
+                        <div class="carousel inner-container"></div>
+                    </div>
+                    <div class="container">
+                        <div class="search-bar flex-row">
+                            <div><span>Support Request</span></div>
+                            <div><button class="btn btn-large">View All</button></div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="table flex-colmn">
+                            <div class="table-header table-row flex-row">
+                                <div><span>TIME</span></div>
+                                <div><span>USER NAME</span></div>
+                                <div><span>STATUS</span></div>
+                            </div>
+                            <div class="table-row flex-row">
+                                <div><span>9:45pm</span></div>
+                                <div><span>info@design.com</span></div>
+                                <div><button class="btn">Solved</button></div>
+                            </div>
+                            <div class="table-row flex-row">
+                                <div><span>9:45pm</span></div>
+                                <div><span>info@design.com</span></div>
+                                <div><button class="btn">Solved</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-sub-2">
+                    <div class="container flex">
+                        <div class="chart line-chart inner-container">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-sub-3 flex-row">
+                    <div class="container flex">
+                        <div class="chart pie-chart inner-container">
+                        </div>
+                    </div>
+                    <div class="container flex">
+                        <div class="chart bar-chart inner-container">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="content flex-row">
+                <div class="logo"><img src="./static/images/logo.png" /></div>
+                <div>
+                    <ul>
+                        <li><a href="javascript:void(0)">NEWS</a></li>
+                        <li><a href="javascript:void(0)">CHANNELS</a></li>
+                        <li><a href="javascript:void(0)">OVERVIEW</a></li>
+                        <li><a href="javascript:void(0)">TIMELINE</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="javascript:void(0)">SPORT</a></a></li>
+                        <li><a href="javascript:void(0)">CULTURE</a></a></li>
+                        <li><a href="javascript:void(0)">NATURE</a></a></li>
+                        <li><a href="javascript:void(0)">MUSIC</a></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="javascript:void(0)">WEATURE</a></a></li>
+                        <li><a href="javascript:void(0)">AUTOS</a></a></li>
+                        <li><a href="javascript:void(0)">LOCAL</a></a></li>
+                        <li><a href="javascript:void(0)">SHOP</a></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="javascript:void(0)">FUTURE</a></a></li>
+                        <li><a href="javascript:void(0)">FOOD</a></a></li>
+                        <li><a href="javascript:void(0)">EARTH</a></a></li>
+                        <li><a href="javascript:void(0)">TV</a></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="javascript:void(0)">TRAVL</a></a></li>
+                        <li><a href="javascript:void(0)">RADIO</a></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./libs/echarts.js"></script>
+<script src="./static/js/index.js"></script>
+</html>
