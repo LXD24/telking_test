@@ -22,7 +22,7 @@ class Carousel {
         var btnNext = this.#buildAElement("next", "&gt;", () => { this.#next() });
 
         var ul = document.createElement("ul");
-        ul.classList.add("flex-row");
+        ul.classList.add("flex");
         ul.classList.add("absolute-center");
         images.forEach((_, index) => {
             let li = document.createElement("li");
