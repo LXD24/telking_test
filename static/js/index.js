@@ -169,6 +169,7 @@ function showLineChart(data) {
             text: '曲线图数据展示',
             x: 'center',
             textStyle: {
+                fontWeight: 'normal',
                 color: '#202124'
             },
         },
